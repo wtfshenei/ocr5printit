@@ -55,8 +55,8 @@ const dotsSlides = document.querySelector('.dots');
 // Fonction principale qui va afficher le contenu demandé
 function slider(n) {
 	if (n === -1) {
-		currentSlide = 3;
-	} else if (n === 4) {
+		currentSlide = slides.length - 1;
+	} else if (n === slides.length) {
 		currentSlide = 0;
 	} else {
 		currentSlide = n;
